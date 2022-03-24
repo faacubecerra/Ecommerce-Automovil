@@ -1,0 +1,28 @@
+.NavBar{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.jdm-maniac{
+    height: 4.5rem;
+}
+.buttons{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: red;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 7px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
