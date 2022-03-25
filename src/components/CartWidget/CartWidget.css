@@ -1,0 +1,16 @@
+.carrito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7px;
+    width: 4rem;
+    height: 2rem;
+}
+.carrito img{
+    height: 2rem;
+
+}
+.carrito p{
+    color: black;
+}

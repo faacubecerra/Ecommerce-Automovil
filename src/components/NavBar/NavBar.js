@@ -1,5 +1,6 @@
 import './NavBar.css'
 import logo from "../NavBar/jdm-maniac.png"
+import CartWidget from "../CartWidget/CartWidgets"
 
 const NavBar = () => {
     return(
@@ -8,12 +9,15 @@ const NavBar = () => {
                 <img src={logo} className='jdm-maniac' />
             </div>
             <div className='buttons'>
-                <a className='button-autos' href="">Autos</a>
-                <a className='button-volantes' href="">Volantes</a>
-                <a className='button-ruedas' href="">Ruedas</a>
+                <a className='button-autos' href="">Automoviles</a>
+                <a className='button-Modificaciones' href="">Modificaciones</a>
+                <a className='button-Accesorios' href="">Accesorios</a>
+            </div>
+            <div>
+                <CartWidget/>
             </div>
         </nav>
     )
 }
 
-export default NavBar
+export default NavBar;
