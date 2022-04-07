@@ -5,7 +5,7 @@ import "../ItemCount/ItemCount.css"
 const Counter = ({stock,initial}) => {
     const [count, setCount] = useState(initial);
     const decrease = () =>{
-        if (count>0){setCount(count-1)}
+        if (count>initial){setCount(count-1)}
     }
     const increase = () =>{
         if (count<stock){setCount(count+1)}
