@@ -5,6 +5,9 @@ import ItemListContainer from './components/ItemListConteiner/ItemListConteiner'
 import MLListConteiner from './components/MLListConteiner/MLListConteiner'
 import { useState } from 'react';
 import ItemDetailConteiner from './components/ItemDetailConteiner/ItemDetailConteiner'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ItemDetail from './components/ItemDetail/ItemDetail';
+
 
 const App = () => {
   const [show, setShow] = useState (true)
@@ -14,13 +17,14 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <NavBar/>
-        <ItemListContainer greeting={"Catalogo en construccion!"} />
-      </header> */}
-      <ItemDetailConteiner/>
-    </div>
+    <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>}/>
+        <Route path='/category/:id'element={<ItemDetail/>}/>
+      </Routes>
+    </BrowserRouter>
+      
   );
 }
 

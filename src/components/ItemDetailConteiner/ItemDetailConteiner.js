@@ -7,7 +7,7 @@ const ItemListContainer = (props) => {
     const [products, setProducts] = useState([])
 
     const getItem = async () => {
-        const response = await fetch('https://api.mercadolibre.com/sites/MLA/search?q=iphone')
+        const response = await fetch('https://api.mercadolibre.com/sites/MLA/search?q=iphone') 
         const data = await response.json()
 
         new Promise (resolve => {
@@ -24,7 +24,7 @@ const ItemListContainer = (props) => {
 
     return(
         <div>
-            {products.map(elem => <ItemDetail title={elem.title} description={'lorem impsum'} img={elem.thumbnail} price={elem.price} />)}
+            {products.map(elem => <ItemDetail title={elem.title} description={'lorem impsum'} img={elem.thumbnail} price={elem.price} id={elem.id}/>)}
         </div>
     )
     
